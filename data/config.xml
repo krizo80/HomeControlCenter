@@ -1,0 +1,13 @@
+<?xml version="1.0" ?><HomeControlCenter file="status">
+    <switch ip="192.168.1.2">
+	<garage url="http://192.168.1.2/gate0"/>
+	<mainGate url="http://192.168.1.2/gate1"/>
+    </switch>
+
+    <status>
+	<element desc="No action" name="garage" state="0"/>
+	<element desc="No action" name="mainGate" state="0"/>
+    </status>
+
+
+ </HomeControlCenter>

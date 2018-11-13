@@ -1,12 +1,20 @@
-<?xml version="1.0" ?><HomeControlCenter file="status">
+<?xml version="1.0" ?><HomeControlCenter file="configuration and status">
     <switch ip="192.168.1.2">
 	<garage url="http://192.168.1.2/gate0"/>
 	<mainGate url="http://192.168.1.2/gate1"/>
+	<sprinkler1 url="http://192.168.1.2/water1_on"/>
+	<sprinkler2 url="http://192.168.1.2/water2_on"/>
+	<sprinkler3 url="http://192.168.1.2/water3_on"/>
+	<sprinklerOff url="http://192.168.1.2/water_off"/>
     </switch>
 
     <status>
 	<element desc="No action" name="garage" state="0"/>
 	<element desc="No action" name="mainGate" state="0"/>
+	<element desc="Status pola 1" name="Sprinkler1" state="0"/>
+	<element desc="Status pola 2" name="Sprinkler2" state="0"/>
+	<element desc="Status pola 3" name="Sprinkler3" state="0"/>
+	<element desc="No action" name="rain" state="0"/>
     </status>
 
 

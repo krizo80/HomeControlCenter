@@ -2,18 +2,18 @@
     <switch ip="192.168.1.2">
 	<garage url="/gate0"/>
 	<mainGate url="/gate1"/>
-	<sprinkler1 url="/water1_on"/>
-	<sprinkler2 url="/water2_on"/>
-	<sprinkler3 url="/water3_on"/>
-	<sprinklerOff url="/water_off"/>
+	<Sprinkler1 url="/water1_on"/>
+	<Sprinkler2 url="/water2_on"/>
+	<Sprinkler3 url="/water3_on"/>
+	<SprinklerOff url="/water_off"/>
     </switch>
 
     <status>
 	<element desc="No action" name="garage" state="0"/>
 	<element desc="No action" name="mainGate" state="0"/>
-	<element desc="No action" name="Sprinkler1" state="0"/>
-	<element desc="No action" name="Sprinkler2" state="0"/>
-	<element desc="No action" name="Sprinkler3" state="0"/>
+	<element desc="Pole 1" name="Sprinkler1" state="0"/>
+	<element desc="Pole 2" name="Sprinkler2" state="0"/>
+	<element desc="Pole 3" name="Sprinkler3" state="0"/>
 	<element desc="No action" name="rain" state="0"/>
     </status>
 

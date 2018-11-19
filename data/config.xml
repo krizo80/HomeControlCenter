@@ -26,6 +26,9 @@ http://192.168.1.3:8080/jsonrpc?request={%22jsonrpc%22:%222.0%22,%22method%22:%2
 glosnosci
 {"jsonrpc": "2.0", "method": "Application.SetVolume", "params": {"volume": 100}, "id": 1}
 http://192.168.1.3:8080/jsonrpc?request={%22jsonrpc%22:%222.0%22,%22method%22:%22Application.GetProperties%22,%22params%22:{%22properties%22:[%22volume%22]},%22id%22:1}
+
+co jest grane
+http://192.168.1.3:8080/jsonrpc?request={%22jsonrpc%22:%20%222.0%22,%20%22method%22:%20%22Player.GetItem%22,%20%22params%22:%20{%20%22properties%22:%20[%22title%22,%22artist%22],%20%22playerid%22:%201%20},%20%22id%22:%221%22}
 -->
 
     <status>
@@ -35,7 +38,6 @@ http://192.168.1.3:8080/jsonrpc?request={%22jsonrpc%22:%222.0%22,%22method%22:%2
 	<element desc="Pole 2" name="Sprinkler2" state="0"/>
 	<element desc="Pole 3" name="Sprinkler3" state="0"/>
 	<element desc="No action" name="rain" state="0"/>
-	<element desc="RMF 2000" name="radio" state="0"/>
     </status>
 
 

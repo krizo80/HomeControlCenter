@@ -5,7 +5,7 @@
 	<Sprinkler1 desc="Zraszacze w polu 1" url="/water1_on"/>
 	<Sprinkler2 desc="Zraszacze w polu 2" url="/water2_on"/>
 	<Sprinkler3 desc="Zraszacze w polu 3" url="/water3_on"/>
-	<SprinklerStatus  url="/status"/>
+	<SprinklerStatus url="/status"/>
 	<SprinklerOff url="/water_off"/>	
     </switch>
 

@@ -19,6 +19,11 @@
 
 
 
+    <alarm>
+	<time>06:00</time>
+	<station>RMF</station>
+	<volume>90</volume>
+    </alarm>
 <!--
 http://192.168.1.3:8080/jsonrpc?request={%22jsonrpc%22:%222.0%22,%22id%22:%221%22,%22method%22:%22Player.Open%22,%22params%22:{%22item%22:{%22file%22:%22http://31.192.216.4:9002/listen.pls%22}}}
 http://192.168.1.3:8080/jsonrpc?request={%22jsonrpc%22:%222.0%22,%22id%22:%221%22,%22method%22:%22Player.Open%22,%22params%22:{%22item%22:{%22file%22:%22https://files.kusmierz.be/rmf/2000.pls%22}}}

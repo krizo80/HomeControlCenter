@@ -36,6 +36,7 @@
 	    <element name="polish@holiday.calendar.google.com"/>
 	</calendars_list>
 	<key value="AIzaSyDepBebtgRz7DIOR60j4Uu0Y-CnOpy22fo"/>
+	<range value="10"/>
     </calendar>
 
     <weather>

@@ -26,13 +26,16 @@
 	<start_time value="06:00"/>
 	<stop_time value="07:00"/>
 	<radio value="RMF"/>
-	<day_policy value="day_of_week"/>
+	<day_policy value="week_day"/>
 	<volume value="80"/>
     </alarm>
 
     <calendar>
-	<my url=""/>
-	<holidays url=""/>
+	<calendars_list>
+	    <element name="krzysiek.richert@gmail.com"/>
+	    <element name="polish@holiday.calendar.google.com"/>
+	</calendars_list>
+	<key value="AIzaSyDepBebtgRz7DIOR60j4Uu0Y-CnOpy22fo"/>
     </calendar>
 
     <weather>

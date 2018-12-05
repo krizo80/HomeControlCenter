@@ -23,9 +23,9 @@
 
 
     <alarm>
-	<start_time value="06:00"/>
+	<start_time value="06:15"/>
 	<stop_time value="07:00"/>
-	<radio value="RMF"/>
+	<radio value="Cool"/>
 	<day_policy value="week_day"/>
 	<volume value="80"/>
     </alarm>

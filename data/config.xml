@@ -40,7 +40,7 @@
     </calendar>
 
     <weather>
-	<current url="http://api.wunderground.com/api/31e42ae65d62abd5/conditions/q/CA/EPGD.xml"/>
+	<current url="http://api.wunderground.com/api/31e42ae65d62abd5/conditions/q/PL/EPGD.xml"/>
 	<hourly url="http://api.wunderground.com/api/31e42ae65d62abd5/hourly/q/PL/EPGD.xml"/>
 	<daily url="http://api.wunderground.com/api/31e42ae65d62abd5/forecast/q/PL/EPGD.xml"/>
     </weather>

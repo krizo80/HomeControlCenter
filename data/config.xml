@@ -27,7 +27,7 @@
 	<stop_time value="07:00"/>
 	<radio value="Cool"/>
 	<day_policy value="week_day"/>
-	<volume value="80"/>
+	<volume value="50"/>
     </alarm>
 
     <calendar>

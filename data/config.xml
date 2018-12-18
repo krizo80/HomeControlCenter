@@ -2,6 +2,7 @@
     <switch ip="192.168.1.2" port="80">
 	<garage url="/gate0"/>
 	<mainGate url="/gate1"/>
+	<door url="/door"/>
 	<Sprinkler1 desc="Zraszacze w polu 1" url="/water1_on"/>
 	<Sprinkler2 desc="Zraszacze w polu 2" url="/water2_on"/>
 	<Sprinkler3 desc="Zraszacze w polu 3" url="/water3_on"/>
@@ -66,6 +67,7 @@ http://api.wunderground.com/api/31e42ae65d62abd5/forecast/q/PL/EPGD.xml
     <status>
 	<element desc="No action" name="garage" state="0"/>
 	<element desc="No action" name="mainGate" state="0"/>
+	<element desc="No action" name="door" state="0"/>
 	<element desc="No action" name="rain" state="0"/>
     </status>
 

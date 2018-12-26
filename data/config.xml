@@ -31,6 +31,11 @@
 	<volume value="50"/>
     </alarm>
 
+    <ds18b20>
+	<device file="/sys/bus/w1/devices/28-0000071e5850/w1_slave"/>
+	<offset value="3"/>
+    </ds18b20>
+
     <calendar>
 	<calendars_list>
 	    <element name="krzysiek.richert@gmail.com"/>

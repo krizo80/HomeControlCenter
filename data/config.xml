@@ -51,11 +51,11 @@
 	<start_time value="22:00"/>
 	<duration value="15"/>
 	<days>
-	    <element name="Poniedziałek" value="False"/>
+	    <element name="Poniedzialek" value="False"/>
 	    <element name="Wtorek" value="False"/>
-	    <element name="Środa" value="False"/>
+	    <element name="Sroda" value="False"/>
 	    <element name="Czwartek" value="False"/>
-	    <element name="Piątek" value="False"/>
+	    <element name="Piatek" value="False"/>
 	    <element name="Sobota" value="False"/>
 	    <element name="Niedziela" value="False"/>
 	</days>

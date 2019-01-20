@@ -10,7 +10,7 @@
 	<SprinklerOff url="/water_off"/>	
     </switch>
 
-    <radio ip="192.168.1.3" port="8080">
+    <radio ip="192.168.1.3" mp3_directory="/media/usb0/Muzyka/" port="8080">
 	<element name="2000" url="https://files.kusmierz.be/rmf/2000.pls"/>
 	<element name="MAXX" url="https://files.kusmierz.be/rmf/maxxx.pls"/>
 	<element name="RMF" url="https://files.kusmierz.be/rmf/rmf.pls"/>
@@ -21,7 +21,6 @@
 	<element name="Club" url="https://files.kusmierz.be/rmf/club.pls"/>
 	<element name="New" url="https://files.kusmierz.be/rmf/hotnew.pls"/>
     </radio>
-
 
     <alarm>
 	<start_time value="06:15"/>

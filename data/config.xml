@@ -1,76 +1,94 @@
 <?xml version="1.0" ?><HomeControlCenter file="configuration and status">
-    <switch ip="192.168.1.2" port="80">
-	<garage url="/gate0"/>
-	<mainGate url="/gate1"/>
-	<door url="/door"/>
-	<Sprinkler1 desc="Zraszacze w polu 1" url="/water1_on"/>
-	<Sprinkler2 desc="Zraszacze w polu 2" url="/water2_on"/>
-	<Sprinkler3 desc="Zraszacze w polu 3" url="/water3_on"/>
-	<SprinklerStatus url="/status"/>
-	<SprinklerOff url="/water_off"/>	
+
+	<switch ip="192.168.1.2" port="80">
+		<garage url="/gate0"/>
+		<mainGate url="/gate1"/>
+		<door url="/door"/>
+		<Sprinkler1 desc="Zraszacze w polu 1" url="/water1_on"/>
+		<Sprinkler2 desc="Zraszacze w polu 2" url="/water2_on"/>
+		<Sprinkler3 desc="Zraszacze w polu 3" url="/water3_on"/>
+		<SprinklerStatus url="/status"/>
+		<SprinklerOff url="/water_off"/>
     </switch>
 
     <radio ip="192.168.1.3" mp3_directory="/media/usb0/Muzyka/" port="8080">
-	<element name="2000" url="https://files.kusmierz.be/rmf/2000.pls"/>
-	<element name="MAXX" url="https://files.kusmierz.be/rmf/maxxx.pls"/>
-	<element name="RMF" url="https://files.kusmierz.be/rmf/rmf.pls"/>
-	<element name="Relaks" url="https://files.kusmierz.be/rmf/relaks.pls"/>
-	<element name="Cool" url="https://files.kusmierz.be/rmf/wpracy.pls"/>
-	<element name="Rock" url="https://files.kusmierz.be/rmf/rock.pls"/>
-	<element name="RnB" url="https://files.kusmierz.be/rmf/rmf4.pls"/>
-	<element name="Club" url="https://files.kusmierz.be/rmf/club.pls"/>
-	<element name="New" url="https://files.kusmierz.be/rmf/hotnew.pls"/>
+		<element name="2000" url="https://files.kusmierz.be/rmf/2000.pls"/>
+		<element name="MAXX" url="https://files.kusmierz.be/rmf/maxxx.pls"/>
+		<element name="RMF" url="https://files.kusmierz.be/rmf/rmf.pls"/>
+		<element name="Relaks" url="https://files.kusmierz.be/rmf/relaks.pls"/>
+		<element name="Cool" url="https://files.kusmierz.be/rmf/wpracy.pls"/>
+		<element name="Rock" url="https://files.kusmierz.be/rmf/rock.pls"/>
+		<element name="RnB" url="https://files.kusmierz.be/rmf/rmf4.pls"/>
+		<element name="Club" url="https://files.kusmierz.be/rmf/club.pls"/>
+		<element name="New" url="https://files.kusmierz.be/rmf/hotnew.pls"/>
     </radio>
 
     <alarm>
-	<start_time value="06:15"/>
-	<stop_time value="07:00"/>
-	<radio value="Cool"/>
-	<day_policy value="week_day"/>
-	<volume value="50"/>
+		<start_time value="06:15"/>
+		<stop_time value="07:00"/>
+		<radio value="Cool"/>
+		<day_policy value="week_day"/>
+		<volume value="50"/>
     </alarm>
 
     <ds18b20>
-	<device file="/sys/bus/w1/devices/28-0000071e5850/w1_slave"/>
-	<offset value="3"/>
+		<device file="/sys/bus/w1/devices/28-0000071e5850/w1_slave"/>
+		<offset value="3"/>
     </ds18b20>
 
     <calendar>
-	<calendars_list>
-	    <element name="krzysiek.richert@gmail.com"/>
-	    <element name="polish@holiday.calendar.google.com"/>
-	</calendars_list>
-	<key value="AIzaSyDepBebtgRz7DIOR60j4Uu0Y-CnOpy22fo"/>
-	<range value="10"/>
+		<calendars_list>
+	    	<element name="krzysiek.richert@gmail.com"/>
+	    	<element name="polish@holiday.calendar.google.com"/>
+		</calendars_list>
+		<key value="AIzaSyDepBebtgRz7DIOR60j4Uu0Y-CnOpy22fo"/>
+		<range value="10"/>
     </calendar>
 
     <weather>
-	<current url="http://api.wunderground.com/api/31e42ae65d62abd5/conditions/q/PL/EPGD.xml"/>
-	<hourly url="http://api.wunderground.com/api/31e42ae65d62abd5/hourly/q/PL/EPGD.xml"/>
-	<daily url="http://api.wunderground.com/api/31e42ae65d62abd5/forecast/q/PL/EPGD.xml"/>
+		<current url="http://api.wunderground.com/api/31e42ae65d62abd5/conditions/q/PL/EPGD.xml"/>
+		<hourly url="http://api.wunderground.com/api/31e42ae65d62abd5/hourly/q/PL/EPGD.xml"/>
+		<daily url="http://api.wunderground.com/api/31e42ae65d62abd5/forecast/q/PL/EPGD.xml"/>
     </weather>
 
     <autowater>
-	<state value="disable"/>
-	<start_time value="22:00"/>
-	<duration value="15"/>
-	<days>
-	    <element name="Poniedzialek" value="False"/>
-	    <element name="Wtorek" value="False"/>
-	    <element name="Sroda" value="False"/>
-	    <element name="Czwartek" value="False"/>
-	    <element name="Piatek" value="False"/>
-	    <element name="Sobota" value="False"/>
-	    <element name="Niedziela" value="False"/>
-	</days>
+		<state value="disable"/>
+		<start_time value="22:00"/>
+		<duration value="15"/>
+		<days>
+	    	<element name="Poniedzialek" value="False"/>
+	    	<element name="Wtorek" value="False"/>
+	    	<element name="Sroda" value="False"/>
+	    	<element name="Czwartek" value="False"/>
+	    	<element name="Piatek" value="False"/>
+	    	<element name="Sobota" value="False"/>
+	    	<element name="Niedziela" value="False"/>
+		</days>
     </autowater>
 
+	<heater>
+		<day_temperature value="20"/>
+		<night_temperature value="19"/>
+		<thermometer mode="min">
+			<ds18b20 file="/sys/bus/w1/devices/28-0000071e5850/w1_slave" offset="3"/>
+		</thermometer>
+		<days>
+			<element name="Poniedzialek" hours="255"/>
+			<element name="Wtorek" hours="255"/>
+			<element name="Sroda" hours="255"/>
+			<element name="Czwartek" hours="255"/>
+			<element name="Piatek" hours="255"/>
+			<element name="Sobota" hours="0"/>
+			<element name="Niedziela" hours="0"/>
+		</days>
+	</heater>
+
     <status>
-	<element desc="No action" name="garage" state="0"/>
-	<element desc="No action" name="mainGate" state="0"/>
-	<element desc="No action" name="door" state="0"/>
-	<element desc="No action" name="rain" state="0"/>
-	<element desc="No action" name="autowater" state="0"/>
+		<element desc="No action" name="garage" state="0"/>
+		<element desc="No action" name="mainGate" state="0"/>
+		<element desc="No action" name="door" state="0"/>
+		<element desc="No action" name="rain" state="0"/>
+		<element desc="No action" name="autowater" state="0"/>
     </status>
 
 

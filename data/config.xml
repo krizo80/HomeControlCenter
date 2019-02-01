@@ -26,7 +26,7 @@
     <alarm>
 		<start_time value="06:15"/>
 		<stop_time value="07:00"/>
-		<radio value="Cool"/>
+		<radio value="Relaks"/>
 		<day_policy value="week_day"/>
 		<volume value="50"/>
     </alarm>
@@ -73,15 +73,17 @@
 			<ds18b20 file="/sys/bus/w1/devices/28-0000071e5850/w1_slave" offset="3"/>
 		</thermometer>
 		<days>
-			<element name="Poniedzialek" hours="255"/>
-			<element name="Wtorek" hours="255"/>
-			<element name="Sroda" hours="255"/>
-			<element name="Czwartek" hours="255"/>
-			<element name="Piatek" hours="255"/>
-			<element name="Sobota" hours="0"/>
-			<element name="Niedziela" hours="0"/>
+			<element hours="255" name="Poniedzialek"/>
+			<element hours="255" name="Wtorek"/>
+			<element hours="255" name="Sroda"/>
+			<element hours="255" name="Czwartek"/>
+			<element hours="255" name="Piatek"/>
+			<element hours="0" name="Sobota"/>
+			<element hours="0" name="Niedziela"/>
 		</days>
 	</heater>
+
+    <passwd localIPmask="192.168.2" value="cd03f67aa0f2dc073b0e68b34f4aa544"/>
 
     <status>
 		<element desc="No action" name="garage" state="0"/>

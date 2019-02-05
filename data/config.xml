@@ -7,8 +7,10 @@
 		<Sprinkler1 desc="Zraszacze w polu 1" url="/water1_on"/>
 		<Sprinkler2 desc="Zraszacze w polu 2" url="/water2_on"/>
 		<Sprinkler3 desc="Zraszacze w polu 3" url="/water3_on"/>
-		<SprinklerStatus url="/status"/>
 		<SprinklerOff url="/water_off"/>
+		<HeaterOn desc="Piec jest uruchomiony" url="/heat_on"/>
+		<HeaterOff url="/heat_off"/>
+		<Status url="/status"/>
     </switch>
 
     <radio ip="192.168.1.3" mp3_directory="/media/usb0/Muzyka/" port="8080">
@@ -67,23 +69,24 @@
     </autowater>
 
 	<heater>
-		<day_temperature value="20"/>
-		<night_temperature value="19"/>
+		<day_temperature value="20.0"/>
+		<night_temperature value="19.5"/>
+		<threshold value="0.2"/>
 		<thermometer mode="min">
 			<ds18b20 file="/sys/bus/w1/devices/28-0000071e5850/w1_slave" offset="3"/>
 		</thermometer>
 		<days>
-			<element hours="255" name="Poniedzialek"/>
-			<element hours="255" name="Wtorek"/>
-			<element hours="255" name="Sroda"/>
-			<element hours="255" name="Czwartek"/>
-			<element hours="255" name="Piatek"/>
-			<element hours="0" name="Sobota"/>
-			<element hours="0" name="Niedziela"/>
+			<element hours="8356032" name="Poniedzialek"/>
+			<element hours="8356032" name="Wtorek"/>
+			<element hours="8356032" name="Sroda"/>
+			<element hours="8356032" name="Czwartek"/>
+			<element hours="8356032" name="Piatek"/>
+			<element hours="8356032" name="Sobota"/>
+			<element hours="8356032" name="Niedziela"/>
 		</days>
 	</heater>
 
-    <passwd localIPmask="192.168.2" value="cd03f67aa0f2dc073b0e68b34f4aa544"/>
+    <passwd localIPmask="192.168.1" value="cd03f67aa0f2dc073b0e68b34f4aa544"/>
 
     <status>
 		<element desc="No action" name="garage" state="0"/>
@@ -91,6 +94,7 @@
 		<element desc="No action" name="door" state="0"/>
 		<element desc="No action" name="rain" state="0"/>
 		<element desc="No action" name="autowater" state="0"/>
+		<element desc="No action" icon="piec" name="heater" state="0"/>
     </status>
 
 

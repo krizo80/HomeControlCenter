@@ -94,7 +94,7 @@
 		<element desc="No action" icon="gate" name="door" state="0"/>
 		<element desc="No action" name="rain" state="0"/>
 		<element desc="No action" name="autowater" state="0"/>
-		<element desc="No action" icon="piec" name="heater" state="0"/>
+		<element desc="Piec w trybie dziennym [20.6]" icon="piec" name="heater" state="1"/>
     </status>
 
 

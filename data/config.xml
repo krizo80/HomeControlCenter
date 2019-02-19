@@ -26,8 +26,8 @@
     </radio>
 
     <alarm>
-		<start_time value="06:15"/>
-		<stop_time value="07:00"/>
+		<start_time value="07:00"/>
+		<stop_time value="07:30"/>
 		<radio value="Relaks"/>
 		<day_policy value="week_day"/>
 		<volume value="50"/>
@@ -69,9 +69,9 @@
     </autowater>
 
 	<heater>
-		<day_temperature value="20.5"/>
-		<night_temperature value="19.8"/>
-		<threshold value="0.1"/>
+		<day_temperature value="20.0"/>
+		<night_temperature value="19.5"/>
+		<threshold value="0.3"/>
 		<thermometer mode="min">
 			<ds18b20 file="/sys/bus/w1/devices/28-0000071e5850/w1_slave" offset="3"/>
 		</thermometer>
@@ -94,7 +94,7 @@
 		<element desc="No action" icon="gate" name="door" state="0"/>
 		<element desc="No action" name="rain" state="0"/>
 		<element desc="No action" name="autowater" state="0"/>
-		<element desc="Piec w trybie dziennym [20.6]" icon="piec" name="heater" state="1"/>
+		<element desc="No action" icon="piec" name="heater" state="0"/>
     </status>
 
 

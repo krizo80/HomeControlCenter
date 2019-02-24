@@ -30,7 +30,7 @@
 		<stop_time title="Godzina zakonczenia" type="text" value="07:30"/>
 		<radio title="Radio" type="text" value="Relaks"/>
 		<day_policy choice="week;Zawsze,week_day;Tylko w tygodniu,disable;Nigdy" title="Aktywny" type="select" value="week_day"/>
-		<volume title="Glosnosc" type="text" value="50"/>
+		<volume title="Glosnosc[%]" type="text" value="50"/>
     </alarm>
 
 
@@ -90,7 +90,7 @@
 		<element desc="No action" icon="gate" name="door" state="0"/>
 		<element desc="No action" name="rain" state="0"/>
 		<element desc="No action" name="autowater" state="0"/>
-		<element desc="Piec w trybie dziennym [20.3]" icon="piec" name="heater" state="1"/>
+		<element desc="No action" icon="piec" name="heater" state="0"/>
     </status>
 
 

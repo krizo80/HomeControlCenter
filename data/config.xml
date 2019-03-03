@@ -81,7 +81,7 @@
 	</heater>
 
     <passwd localIPmask="192.168.1">
-	<md5 title="Haslo" type="text_md5" value="cd03f67aa0f2dc073b0e68b34f4aa544"/>
+	<md5 param="md5" title="Haslo" type="text" value="cd03f67aa0f2dc073b0e68b34f4aa544"/>
     </passwd>
 
     <status>

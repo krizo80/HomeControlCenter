@@ -4,11 +4,11 @@
 		<garage url="/gate0"/>
 		<mainGate url="/gate1"/>
 		<door url="/door"/>
-		<Sprinkler1 desc="Zraszacze w polu 1" url="/water1_on"/>
-		<Sprinkler2 desc="Zraszacze w polu 2" url="/water2_on"/>
-		<Sprinkler3 desc="Zraszacze w polu 3" url="/water3_on"/>
+		<Sprinkler1 url="/water1_on"/>
+		<Sprinkler2 url="/water2_on"/>
+		<Sprinkler3 url="/water3_on"/>
 		<SprinklerOff url="/water_off"/>
-		<HeaterOn desc="Piec jest uruchomiony" url="/heat_on"/>
+		<HeaterOn url="/heat_on"/>
 		<HeaterOff url="/heat_off"/>
 		<Status url="/status"/>
     </switch>
@@ -88,9 +88,9 @@
 		<element desc="No action" icon="gate" name="garage" state="0"/>
 		<element desc="No action" icon="gate" name="mainGate" state="0"/>
 		<element desc="No action" icon="gate" name="door" state="0"/>
-		<element desc="No action" name="rain" state="0"/>
-		<element desc="No action" name="autowater" state="0"/>
+		<element desc="No action" icon="garden" name="sprinkler" state="0"/>
 		<element desc="No action" icon="piec" name="heater" state="0"/>
+		<element desc="No action" icon="switch" name="error" state="0"/>
     </status>
 
 

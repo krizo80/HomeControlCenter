@@ -84,6 +84,17 @@
 	<md5 param="md5" title="Haslo" type="text" value="cd03f67aa0f2dc073b0e68b34f4aa544"/>
     </passwd>
 
+    <text_messages>
+	<phone>
+	    <element number="505200871"/>
+	    <element number="505312929"/>
+	</phone>
+	<text>
+	    <element id="0" value="Szmbo pelne"/>
+	    <element id="1" value="Szmbo oproznione"/>
+	</text>
+    </text_messages>
+
     <status>
 		<element desc="No action" icon="gate" name="garage" state="0"/>
 		<element desc="No action" icon="gate" name="mainGate" state="0"/>
@@ -92,5 +103,6 @@
 		<element desc="No action" icon="piec" name="heater" state="0"/>
 		<element desc="No action" icon="switch" name="error" state="0"/>
 		<element desc="No action" icon="garden" name="rain" state="0"/>
+		<element desc="No action" icon="garden" name="szambo" state="0"/>
     </status>
 </HomeControlCenter>

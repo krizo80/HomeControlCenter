@@ -91,7 +91,6 @@
 		<element desc="No action" icon="garden" name="sprinkler" state="0"/>
 		<element desc="No action" icon="piec" name="heater" state="0"/>
 		<element desc="No action" icon="switch" name="error" state="0"/>
+		<element desc="No action" icon="garden" name="rain" state="0"/>
     </status>
-
-
- </HomeControlCenter>
+</HomeControlCenter>

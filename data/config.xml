@@ -85,13 +85,26 @@
     </passwd>
 
     <text_messages>
-	<phone>
+	<token value="aw1MXs5embB9sWDfKnKMoV70Ng1HCgdWCDayjkdT"/>
+	<phones>
 	    <element number="505200871"/>
-	    <element number="505312929"/>
-	</phone>
+	    <element number="505200871"/>
+	</phones>
 	<text>
-	    <element id="0" value="Szmbo pelne"/>
-	    <element id="1" value="Szmbo oproznione"/>
+	    <element id="0">
+		<active message="Dom:Szambo pelne"/>
+		<inactive message="Dom:Szambo oproznione"/>
+	    </element>
+
+	    <element id="1">
+		<active message="Dom:Blad krytyczny sterownika"/>
+		<inactive message="Dom:Sterownik dziala prawidlowo"/>
+	    </element>
+
+	    <element id="2">
+		<active message="Dom:Zraszacze wlaczone"/>
+		<inactive message="Dom:Zakonczono zraszanie"/>
+	    </element>
 	</text>
     </text_messages>
 
@@ -99,10 +112,10 @@
 		<element desc="No action" icon="gate" name="garage" state="0"/>
 		<element desc="No action" icon="gate" name="mainGate" state="0"/>
 		<element desc="No action" icon="gate" name="door" state="0"/>
-		<element desc="No action" icon="garden" name="sprinkler" state="0"/>
+		<element desc="No action" icon="garden" messageId="2" name="sprinkler" state="0"/>
 		<element desc="No action" icon="piec" name="heater" state="0"/>
-		<element desc="No action" icon="switch" name="error" state="0"/>
+		<element desc="No action" icon="switch" messageId="1" name="error" state="0"/>
 		<element desc="No action" icon="garden" name="rain" state="0"/>
-		<element desc="No action" icon="garden" name="szambo" state="0"/>
+		<element desc="No action" icon="cesspit" messageId="0" name="cesspit" state="0"/>
     </status>
 </HomeControlCenter>

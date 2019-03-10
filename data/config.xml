@@ -88,7 +88,6 @@
 	<token value="aw1MXs5embB9sWDfKnKMoV70Ng1HCgdWCDayjkdT"/>
 	<phones>
 	    <element number="505200871"/>
-	    <element number="505200871"/>
 	</phones>
 	<text>
 	    <element id="0">
@@ -116,6 +115,6 @@
 		<element desc="No action" icon="piec" name="heater" state="0"/>
 		<element desc="No action" icon="switch" messageId="1" name="error" state="0"/>
 		<element desc="No action" icon="garden" name="rain" state="0"/>
-		<element desc="No action" icon="cesspit" messageId="0" name="cesspit" state="0"/>
+		<element desc="Szambo pelne [tel:0501024804]" icon="cesspit" messageId="0" name="cesspit" state="1"/>
     </status>
 </HomeControlCenter>

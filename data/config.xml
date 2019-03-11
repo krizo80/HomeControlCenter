@@ -26,8 +26,8 @@
     </radio>
 
     <alarm>
-		<start_time title="Godzina alarmu" type="text" value="07:00"/>
-		<stop_time title="Godzina zakonczenia" type="text" value="07:30"/>
+		<start_time title="Godzina alarmu" type="text" value="18:07"/>
+		<stop_time title="Godzina zakonczenia" type="text" value="18:08"/>
 		<radio title="Radio" type="text" value="Relaks"/>
 		<day_policy param="week;Zawsze,week_day;Tylko w tygodniu,disable;Nigdy" title="Aktywny" type="select" value="week_day"/>
 		<volume title="Glosnosc[%]" type="text" value="50"/>

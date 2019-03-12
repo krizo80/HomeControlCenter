@@ -44,9 +44,9 @@
     </calendar>
 
     <weather>
-		<current url="http://api.wunderground.com/api/31e42ae65d62abd5/conditions/q/PL/EPGD.xml"/>
-		<hourly url="http://api.wunderground.com/api/31e42ae65d62abd5/hourly/q/PL/EPGD.xml"/>
-		<daily url="http://api.wunderground.com/api/31e42ae65d62abd5/forecast/q/PL/EPGD.xml"/>
+		<current url="http://api.openweathermap.org/data/2.5/weather?q=Zukowo,pl&amp;APPID=e8098f361e6d19a9ec131bc3513b3228&amp;units=metric&amp;lang=pl"/>
+		<hourly url="http://api.openweathermap.org/data/2.5/forecast?q=Zukowo,pl&amp;APPID=e8098f361e6d19a9ec131bc3513b3228&amp;units=metric&amp;lang=pl"/>
+		<daily url=""/>
     </weather>
 
     <autowater>
@@ -112,9 +112,9 @@
 		<element desc="No action" icon="gate" name="mainGate" state="0"/>
 		<element desc="No action" icon="gate" name="door" state="0"/>
 		<element desc="No action" icon="garden" messageId="2" name="sprinkler" state="0"/>
-		<element desc="Piec w trybie dziennym [21.3]" icon="piec" name="heater" state="1"/>
+		<element desc="No action" icon="piec" name="heater" state="0"/>
 		<element desc="No action" icon="switch" messageId="1" name="error" state="0"/>
 		<element desc="No action" icon="garden" name="rain" state="0"/>
-		<element desc="Szambo pelne [tel:0501024804]" icon="cesspit" messageId="0" name="cesspit" state="1"/>
+		<element desc="No action" icon="cesspit" messageId="0" name="cesspit" state="0"/>
     </status>
 </HomeControlCenter>

@@ -50,12 +50,12 @@
     </weather>
 
     <autowater>
-		<state param="disable;Wylaczone,enable;Aktywne" title="Stan" type="select" value="disable"/>
-		<start_time title="Podlewanie start" type="text" value="22:00"/>
-		<duration title="Czas trwania" type="text" value="15"/>
+		<state param="disable;Wylaczone,enable;Aktywne" title="Stan" type="select" value="enable"/>
+		<start_time title="Podlewanie start" type="text" value="15:02"/>
+		<duration title="Czas trwania" type="text" value="3"/>
 		<rain param="False;Ignoruj,True;Sprawdzaj" title="Sprawdzaj prognoze pogody" type="select" value="False"/>
-	    	<day1 param="False;Wylaczone,True;Aktywne" title="Poniedzialek" type="select" value="False"/>
-	    	<day2 param="False;Wylaczone,True;Aktywne" title="Wtorek" type="select" value="False"/>
+	    	<day1 param="False;Wylaczone,True;Aktywne" title="Poniedzialek" type="select" value="True"/>
+	    	<day2 param="False;Wylaczone,True;Aktywne" title="Wtorek" type="select" value="True"/>
 	    	<day3 param="False;Wylaczone,True;Aktywne" title="Sroda" type="select" value="False"/>
 	    	<day4 param="False;Wylaczone,True;Aktywne" title="Czwartek" type="select" value="False"/>
 	    	<day5 param="False;Wylaczone,True;Aktywne" title="Piatek" type="select" value="False"/>

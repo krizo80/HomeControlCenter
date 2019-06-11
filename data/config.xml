@@ -23,11 +23,14 @@
 		<element name="RnB" url="https://files.kusmierz.be/rmf/rmf4.pls"/>
 		<element name="Club" url="https://files.kusmierz.be/rmf/club.pls"/>
 		<element name="New" url="https://files.kusmierz.be/rmf/hotnew.pls"/>
+		<element name="Program1" url="http://stream3.polskieradio.pl:8900/listen.pls"/>
+		<element name="Polskie" url="http://stream3.polskieradio.pl:8480/listen.pls"/>
+		<element name="Plus" url="http://plu-gdn-01.cdn.eurozet.pl:8304/listen.pls"/>
     </radio>
 
     <alarm>
-		<start_time title="Godzina alarmu" type="text" value="07:0"/>
-		<stop_time title="Godzina zakonczenia" type="text" value="07:42"/>
+		<start_time title="Godzina alarmu" type="text" value="07:00"/>
+		<stop_time title="Godzina zakonczenia" type="text" value="07:45"/>
 		<radio title="Radio" type="text" value="Relaks"/>
 		<day_policy param="week;Zawsze,week_day;Tylko w tygodniu,disable;Nigdy" title="Aktywny" type="select" value="week_day"/>
 		<volume title="Glosnosc[%]" type="text" value="50"/>
@@ -40,7 +43,7 @@
 	    	<element name="polish@holiday.calendar.google.com"/>
 		</calendars_list>
 		<key value="AIzaSyDepBebtgRz7DIOR60j4Uu0Y-CnOpy22fo"/>
-		<sms param="False;Wylaczony,True;Aktywny" title="Przypominacz" type="select" value="True" sendTime="00:35"/>
+		<sms param="False;Wylaczony,True;Aktywny" sendTime="19:00" title="Przypominacz" type="select" value="True"/>
 		<range title="Zasieg[dni]" type="text" value="10"/>
     </calendar>
 
@@ -52,14 +55,14 @@
 
     <autowater>
 		<state param="disable;Wylaczone,enable;Aktywne" title="Stan" type="select" value="enable"/>
-		<start_time title="Podlewanie start" type="text" value="15:02"/>
-		<duration title="Czas trwania" type="text" value="3"/>
+		<start_time title="Podlewanie start" type="text" value="22:00"/>
+		<duration title="Czas trwania" type="text" value="15"/>
 		<rain param="False;Ignoruj,True;Sprawdzaj" title="Sprawdzaj prognoze pogody" type="select" value="False"/>
 	    	<day1 param="False;Wylaczone,True;Aktywne" title="Poniedzialek" type="select" value="True"/>
-	    	<day2 param="False;Wylaczone,True;Aktywne" title="Wtorek" type="select" value="True"/>
-	    	<day3 param="False;Wylaczone,True;Aktywne" title="Sroda" type="select" value="False"/>
+	    	<day2 param="False;Wylaczone,True;Aktywne" title="Wtorek" type="select" value="False"/>
+	    	<day3 param="False;Wylaczone,True;Aktywne" title="Sroda" type="select" value="True"/>
 	    	<day4 param="False;Wylaczone,True;Aktywne" title="Czwartek" type="select" value="False"/>
-	    	<day5 param="False;Wylaczone,True;Aktywne" title="Piatek" type="select" value="False"/>
+	    	<day5 param="False;Wylaczone,True;Aktywne" title="Piatek" type="select" value="True"/>
 	    	<day6 param="False;Wylaczone,True;Aktywne" title="Sobota" type="select" value="False"/>
 	    	<day7 param="False;Wylaczone,True;Aktywne" title="Niedziela" type="select" value="False"/>
     </autowater>
@@ -89,6 +92,7 @@
 	<token value="JDJhJDEyJEtyREhBYWttOE1XVmYwSVRDUERrOS51WUxrRVhFUEM2a09XaUVXUmlTZ0x6YVNuc1puZHU2"/>
 	<phones>
 	    <element number="505200871"/>
+	    <element number="505312929"/>
 	</phones>
 	<text>
 	    <element id="0">
@@ -112,9 +116,9 @@
 		<element desc="No action" icon="gate" name="garage" state="0"/>
 		<element desc="No action" icon="gate" name="mainGate" state="0"/>
 		<element desc="No action" icon="gate" name="door" state="0"/>
-		<element desc="No action" icon="garden" messageId="2" name="sprinkler" state="0"/>
+		<element desc="No action" icon="garden" name="sprinkler" state="0"/>
 		<element desc="No action" icon="piec" name="heater" state="0"/>
-		<element desc="No action" icon="switch" name="error" state="0"/>
+		<element desc="No action" icon="switch" messageId="1" name="error" state="0"/>
 		<element desc="No action" icon="garden" name="rain" state="0"/>
 		<element desc="No action" icon="cesspit" messageId="0" name="cesspit" state="0"/>
     </status>

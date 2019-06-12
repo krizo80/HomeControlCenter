@@ -40,6 +40,7 @@
 	    	<element name="polish@holiday.calendar.google.com"/>
 		</calendars_list>
 		<key value="AIzaSyDepBebtgRz7DIOR60j4Uu0Y-CnOpy22fo"/>
+		<sms param="False;Wylaczony,True;Aktywny" title="Przypominacz" type="select" value="True" sendTime="00:35"/>
 		<range title="Zasieg[dni]" type="text" value="10"/>
     </calendar>
 

@@ -48,9 +48,9 @@
     </calendar>
 
     <weather>
-		<current url="http://api.openweathermap.org/data/2.5/weather?q=Zukowo,pl&amp;APPID=e8098f361e6d19a9ec131bc3513b3228&amp;units=metric&amp;lang=pl"/>
-		<hourly url="http://api.openweathermap.org/data/2.5/forecast?q=Zukowo,pl&amp;APPID=e8098f361e6d19a9ec131bc3513b3228&amp;units=metric&amp;lang=pl"/>
-		<daily url=""/>
+<current url="https://api.weatherbit.io/v1.0/current/city?city_id=3087299&amp;lang=pl&amp;key=cad604937e474c7c9667370555483830"/>
+<hourly url="https://api.weatherbit.io/v1.0/forecast/hourly/city?city_id=3087299&amp;lang=pl&amp;hours=24&amp;key=cad604937e474c7c9667370555483830"/>
+<daily url="https://api.weatherbit.io/v1.0/forecast/daily/city?city_id=3087299&amp;days=3&amp;lang=pl&amp;key=cad604937e474c7c9667370555483830"/>
     </weather>
 
     <autowater>

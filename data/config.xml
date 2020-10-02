@@ -14,12 +14,13 @@
     </switch>
 
     <radio ip="192.168.1.3" mp3_directory="/media/usb0/Muzyka/" port="8080">
+
 		<element name="2000" url="http://31.192.216.10/2000"/>
 		<element name="MAXX" url="http://31.192.216.10/RMFMAXXX48"/>
 		<element name="RMF" url="http://31.192.216.10/RMFFM48"/>
 		<element name="Relaks" url="http://195.150.20.7/RELAKS"/>
 		<element name="Cool" url="http://31.192.216.10/WPRACY"/>
-		<element name="Rock" url="http://31.192.216.10/ROCK"/>
+		<element name="AntyRadio" url="https://an.cdn.eurozet.pl/ant-waw.mp3"/>
 		<element name="RnB" url="http://31.192.216.10/RNB"/>
 		<element name="Club" url="http://31.192.216.10/CLUB"/>
 		<element name="New" url="http://31.192.216.10/HOTNEW"/>
@@ -30,10 +31,10 @@
 
     <alarm>
 		<start_time title="Godzina alarmu" type="text" value="07:00"/>
-		<stop_time title="Godzina zakonczenia" type="text" value="07:45"/>
-		<radio title="Radio" type="text" value="Relaks"/>
+		<stop_time title="Godzina zakonczenia" type="text" value="07:30"/>
+		<channel type="text" value="46"/>
 		<day_policy param="week;Zawsze,week_day;Tylko w tygodniu,disable;Nigdy" title="Aktywny" type="select" value="week_day"/>
-		<volume title="Glosnosc[%]" type="text" value="50"/>
+		<volume title="Glosnosc[%]" type="text" value="53"/>
     </alarm>
 
 
@@ -42,7 +43,7 @@
 	    	<element name="krzysiek.richert@gmail.com"/>
 	    	<element name="polish@holiday.calendar.google.com"/>
 		</calendars_list>
-		<key value="AIzaSyDepBebtgRz7DIOR60j4Uu0Y-CnOpy22fo"/>
+		<key value="AIzaSyCrh3AIdRUJOmpqB5XqJhnJbhnlcJPYruM"/>
 		<sms param="False;Wylaczony,True;Aktywny" sendTime="19:00" title="Przypominacz" type="select" value="True"/>
 		<range title="Zasieg[dni]" type="text" value="10"/>
     </calendar>
@@ -54,15 +55,15 @@
     </weather>
 
     <autowater>
-		<state param="disable;Wylaczone,enable;Aktywne" title="Stan" type="select" value="enable"/>
+		<state param="disable;Wylaczone,enable;Aktywne" title="Stan" type="select" value="disable"/>
 		<start_time title="Podlewanie start" type="text" value="22:00"/>
-		<duration title="Czas trwania" type="text" value="15"/>
-		<rain param="False;Ignoruj,True;Sprawdzaj" title="Sprawdzaj prognoze pogody" type="select" value="False"/>
-	    	<day1 param="False;Wylaczone,True;Aktywne" title="Poniedzialek" type="select" value="True"/>
+		<duration title="Czas trwania" type="text" value="20"/>
+		<rain param="False;Ignoruj,True;Sprawdzaj" title="Sprawdzaj prognoze pogody" type="select" value="True"/>
+	    	<day1 param="False;Wylaczone,True;Aktywne" title="Poniedzialek" type="select" value="False"/>
 	    	<day2 param="False;Wylaczone,True;Aktywne" title="Wtorek" type="select" value="False"/>
-	    	<day3 param="False;Wylaczone,True;Aktywne" title="Sroda" type="select" value="True"/>
+	    	<day3 param="False;Wylaczone,True;Aktywne" title="Sroda" type="select" value="False"/>
 	    	<day4 param="False;Wylaczone,True;Aktywne" title="Czwartek" type="select" value="False"/>
-	    	<day5 param="False;Wylaczone,True;Aktywne" title="Piatek" type="select" value="True"/>
+	    	<day5 param="False;Wylaczone,True;Aktywne" title="Piatek" type="select" value="False"/>
 	    	<day6 param="False;Wylaczone,True;Aktywne" title="Sobota" type="select" value="False"/>
 	    	<day7 param="False;Wylaczone,True;Aktywne" title="Niedziela" type="select" value="False"/>
     </autowater>

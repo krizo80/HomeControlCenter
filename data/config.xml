@@ -13,26 +13,13 @@
 		<Status url="/status"/>
     </switch>
 
-    <radio ip="192.168.1.3" mp3_directory="/media/usb0/Muzyka/" port="8080">
+ <radio ip="127.0.0.1" mp3_directory="/media/usb0/Muzyka/" port="8080"/>
 
-		<element name="2000" url="http://31.192.216.10/2000"/>
-		<element name="MAXX" url="http://31.192.216.10/RMFMAXXX48"/>
-		<element name="RMF" url="http://31.192.216.10/RMFFM48"/>
-		<element name="Relaks" url="http://195.150.20.7/RELAKS"/>
-		<element name="Cool" url="http://31.192.216.10/WPRACY"/>
-		<element name="AntyRadio" url="https://an.cdn.eurozet.pl/ant-waw.mp3"/>
-		<element name="RnB" url="http://31.192.216.10/RNB"/>
-		<element name="Club" url="http://31.192.216.10/CLUB"/>
-		<element name="New" url="http://31.192.216.10/HOTNEW"/>
-		<element name="Classic" url="http://31.192.216.10/RMFCLASSIC48"/>
-		<element name="Polskie" url="http://stream3.polskieradio.pl:8480/listen.pls"/>
-		<element name="Calm" url="http://31.192.216.10/RMF5"/>
-    </radio>
 
     <alarm>
 		<start_time title="Godzina alarmu" type="text" value="07:00"/>
 		<stop_time title="Godzina zakonczenia" type="text" value="07:30"/>
-		<channel type="text" value="46"/>
+		<channel type="text" value="33"/>
 		<day_policy param="week;Zawsze,week_day;Tylko w tygodniu,disable;Nigdy" title="Aktywny" type="select" value="week_day"/>
 		<volume title="Glosnosc[%]" type="text" value="53"/>
     </alarm>
@@ -69,8 +56,8 @@
     </autowater>
 
 	<heater>
-		<day_temperature title="Temperatura dzienna" type="text" value="20.0"/>
-		<night_temperature title="Temperatura nocna" type="text" value="19.5"/>
+		<day_temperature title="Temperatura dzienna" type="text" value="20.75"/>
+		<night_temperature title="Temperatura nocna" type="text" value="20.0"/>
 		<threshold title="Tolerancja" type="text" value="0.3"/>
 		<thermometer mode="min">
 			<ds18b20 file="/sys/bus/w1/devices/28-0000071e5850/w1_slave" offset="3"/>
@@ -85,9 +72,6 @@
 		<day7 name="day7" param="24" title="Niedziela" type="bitfield" value="0"/>
 	</heater>
 
-    <passwd localIPmask="192.168.1">
-	<md5 param="md5" title="Haslo" type="text" value="cd03f67aa0f2dc073b0e68b34f4aa544"/>
-    </passwd>
 
     <text_messages>
 	<token value="JDJhJDEyJEtyREhBYWttOE1XVmYwSVRDUERrOS51WUxrRVhFUEM2a09XaUVXUmlTZ0x6YVNuc1puZHU2"/>
@@ -112,6 +96,12 @@
 	    </element>
 	</text>
     </text_messages>
+
+    <rooms>
+	<room alarm="1" id="0" light="192.168.1.26" name="Ogrod" temperature="2"/>
+	<room alarm="2" id="1" light="0.0.0.0" name="Kuchnia" temperature="5"/>
+	<room alarm="5" id="2" light="0.0.0.0" name="Salon" temperature="6"/>
+    </rooms>
 
     <status>
 		<element desc="No action" icon="gate" name="garage" state="0"/>

@@ -14,7 +14,7 @@
     </switch>
 
  <radio ip="127.0.0.1" mp3_directory="/media/usb0/Muzyka/" port="8080"/>
-
+ <AlarmSystem ip="192.168.1.47" port="9080"/>
 
     <alarm>
 		<start_time title="Godzina alarmu" type="text" value="07:00"/>
@@ -98,9 +98,43 @@
     </text_messages>
 
     <rooms>
-	<room alarm="1" id="0" light="192.168.1.26" name="Ogrod" temperature="2"/>
-	<room alarm="2" id="1" light="0.0.0.0" name="Kuchnia" temperature="5"/>
-	<room alarm="5" id="2" light="0.0.0.0" name="Salon" temperature="6"/>
+	<room id="0" light="192.168.1.26" name="Ogrod" temperature="">
+	    <alarmSensor sensorName="Furtka"/>
+	    <alarmSensor sensorName="Kamera"/>
+	</room>
+
+	<room id="1" light="192.168.1.14"  name="Kuchnia" temperature="">
+	    <alarmSensor sensorName="Kuchnia"/>
+	</room>
+
+	<room id="2" light="0.0.0.0" name="Salon" temperature="TempSalon">
+	    <alarmSensor sensorName="Salon1"/>
+	    <alarmSensor sensorName="Salon2"/>
+	</room>
+
+	<room id="3" light="0.0.0.0" name="Gabinet" temperature="">
+	</room>
+
+	<room id="4" light="0.0.0.0" name="Sypialnia Nati" temperature="">
+	</room>
+
+	<room id="5" light="0.0.0.0" name="Sypialnia Pati" temperature="">
+	</room>
+
+	<room id="6" light="192.168.1.49" moveSensor="" name="Sypialnia" temperature="TempSypialnia">
+	</room>
+
+	<room id="7" light="0.0.0.0" name="Garderoba" temperature="">
+	</room>
+
+	<room id="8" light="0.0.0.0" name="Pralnia" temperature="">
+	</room>
+
+	<room id="9" light="0.0.0.0" name="Garaz" temperature="">
+	</room>
+
+	<room id="10" light="0.0.0.0" name="Kotlownia" temperature="">
+	</room>
     </rooms>
 
     <status>

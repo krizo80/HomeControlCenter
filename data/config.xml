@@ -21,7 +21,7 @@
 		<stop_time title="Godzina zakonczenia" type="text" value="07:30"/>
 		<channel type="text" value="33"/>
 		<day_policy param="week;Zawsze,week_day;Tylko w tygodniu,disable;Nigdy" title="Aktywny" type="select" value="week_day"/>
-		<volume title="Glosnosc[%]" type="text" value="53"/>
+		<volume title="Glosnosc[%]" type="text" value="45"/>
     </alarm>
 
 
@@ -36,41 +36,42 @@
     </calendar>
 
     <weather>
-<current url="https://api.weatherbit.io/v1.0/current/city?city_id=3087299&amp;lang=pl&amp;key=cad604937e474c7c9667370555483830"/>
-<hourly url="https://api.weatherbit.io/v1.0/forecast/hourly/city?city_id=3087299&amp;lang=pl&amp;hours=24&amp;key=cad604937e474c7c9667370555483830"/>
-<daily url="https://api.weatherbit.io/v1.0/forecast/daily/city?city_id=3087299&amp;days=3&amp;lang=pl&amp;key=cad604937e474c7c9667370555483830"/>
+	<current url="https://api.weatherbit.io/v1.0/current/city?city_id=3087299&amp;lang=pl&amp;key=cad604937e474c7c9667370555483830"/>
+	<hourly url="https://api.weatherbit.io/v1.0/forecast/hourly/city?city_id=3087299&amp;lang=pl&amp;hours=24&amp;key=cad604937e474c7c9667370555483830"/>
+	<daily url="https://api.weatherbit.io/v1.0/forecast/daily/city?city_id=3087299&amp;days=3&amp;lang=pl&amp;key=cad604937e474c7c9667370555483830"/>
     </weather>
 
     <autowater>
-		<state param="disable;Wylaczone,enable;Aktywne" title="Stan" type="select" value="disable"/>
-		<start_time title="Podlewanie start" type="text" value="22:00"/>
-		<duration title="Czas trwania" type="text" value="20"/>
-		<rain param="False;Ignoruj,True;Sprawdzaj" title="Sprawdzaj prognoze pogody" type="select" value="True"/>
-	    	<day1 param="False;Wylaczone,True;Aktywne" title="Poniedzialek" type="select" value="False"/>
-	    	<day2 param="False;Wylaczone,True;Aktywne" title="Wtorek" type="select" value="False"/>
-	    	<day3 param="False;Wylaczone,True;Aktywne" title="Sroda" type="select" value="False"/>
-	    	<day4 param="False;Wylaczone,True;Aktywne" title="Czwartek" type="select" value="False"/>
-	    	<day5 param="False;Wylaczone,True;Aktywne" title="Piatek" type="select" value="False"/>
-	    	<day6 param="False;Wylaczone,True;Aktywne" title="Sobota" type="select" value="False"/>
-	    	<day7 param="False;Wylaczone,True;Aktywne" title="Niedziela" type="select" value="False"/>
+	<state param="disable;Wylaczone,enable;Aktywne" title="Stan" type="select" value="disable"/>
+	<start_time title="Podlewanie start" type="text" value="22:00"/>
+	<duration title="Czas trwania" type="text" value="20"/>
+	<rain param="False;Ignoruj,True;Sprawdzaj" title="Sprawdzaj prognoze pogody" type="select" value="True"/>
+    	<day1 param="False;Wylaczone,True;Aktywne" title="Poniedzialek" type="select" value="False"/>
+    	<day2 param="False;Wylaczone,True;Aktywne" title="Wtorek" type="select" value="False"/>
+    	<day3 param="False;Wylaczone,True;Aktywne" title="Sroda" type="select" value="False"/>
+    	<day4 param="False;Wylaczone,True;Aktywne" title="Czwartek" type="select" value="False"/>
+    	<day5 param="False;Wylaczone,True;Aktywne" title="Piatek" type="select" value="False"/>
+    	<day6 param="False;Wylaczone,True;Aktywne" title="Sobota" type="select" value="False"/>
+    	<day7 param="False;Wylaczone,True;Aktywne" title="Niedziela" type="select" value="False"/>
     </autowater>
 
-	<heater>
-		<day_temperature title="Temperatura dzienna" type="text" value="20.75"/>
-		<night_temperature title="Temperatura nocna" type="text" value="20.0"/>
-		<threshold title="Tolerancja" type="text" value="0.3"/>
-		<thermometer mode="min">
-			<ds18b20 file="/sys/bus/w1/devices/28-0000071e5850/w1_slave" offset="3"/>
-		</thermometer>
+    <heater>
+	<day_temperature title="Temperatura dzienna" type="text" value="20.75"/>
+	<night_temperature title="Temperatura nocna" type="text" value="20.3"/>
+	<threshold title="Tolerancja" type="text" value="0.3"/>
+	<thermometer mode="max">
+		<device name="TempSalon" offset="0"/>
+		<device name="TempSypialnia" offset="0"/>
+	</thermometer>
 
-		<day1 name="day1" param="24" title="Poniedzialek" type="bitfield" value="8356032"/>
-		<day2 name="day2" param="24" title="Wtorek" type="bitfield" value="8356032"/>
-		<day3 name="day3" param="24" title="Sroda" type="bitfield" value="8356032"/>
-		<day4 name="day4" param="24" title="Czwartek" type="bitfield" value="8356032"/>
-		<day5 name="day5" param="24" title="Piatek" type="bitfield" value="8356032"/>
-		<day6 name="day6" param="24" title="Sobota" type="bitfield" value="0"/>
-		<day7 name="day7" param="24" title="Niedziela" type="bitfield" value="0"/>
-	</heater>
+	<day1 name="day1" param="24" title="Poniedzialek" type="bitfield" value="8356032"/>
+	<day2 name="day2" param="24" title="Wtorek" type="bitfield" value="8356032"/>
+	<day3 name="day3" param="24" title="Sroda" type="bitfield" value="8356032"/>
+	<day4 name="day4" param="24" title="Czwartek" type="bitfield" value="8356032"/>
+	<day5 name="day5" param="24" title="Piatek" type="bitfield" value="8356032"/>
+	<day6 name="day6" param="24" title="Sobota" type="bitfield" value="0"/>
+	<day7 name="day7" param="24" title="Niedziela" type="bitfield" value="0"/>
+    </heater>
 
 
     <text_messages>
@@ -103,7 +104,7 @@
 	    <alarmSensor sensorName="Kamera"/>
 	</room>
 
-	<room id="1" light="192.168.1.14"  name="Kuchnia" temperature="">
+	<room id="1" light="192.168.1.14" name="Kuchnia" temperature="">
 	    <alarmSensor sensorName="Kuchnia"/>
 	</room>
 
@@ -136,6 +137,11 @@
 	<room id="10" light="0.0.0.0" name="Kotlownia" temperature="">
 	</room>
     </rooms>
+
+    <actions>
+	<action timeStart="sunset" timeEnd="22:00" device="light" roomId="0" validMonths="2273"/>
+	<action timeStart="sunset" device="light" ifStatment="alarmActivate" roomId="1" validMonths="4095"/>
+    </actions>
 
     <status>
 		<element desc="No action" icon="gate" name="garage" state="0"/>

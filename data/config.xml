@@ -1,13 +1,38 @@
-<?xml version="1.0" ?><HomeControlCenter file="configuration and status" id="xxxxxxxx" password="xxx" server="http://192.168.1.3/register">
+<?xml version="1.0" ?><HomeControlCenter file="configuration and status" id="00000xxx" password="" server="http://192.168.1.3/register">
 
+
+     <AlarmSystem ip="192.168.1.100" port="9080"/>
+
+    <devices>
+	<sprinkler>
+	    <element desc="Zraszacze w polu 1" id="1" sensor="Zraszacze1" state="0"/>
+	    <element desc="Zraszacze w polu 2" id="2" sensor="Zraszacze2" state="0"/>
+	    <element desc="Zraszacze w polu 3" id="3" sensor="Zraszacze3" state="0"/>
+	</sprinkler>
+
+	<heater>
+	    <element desc="Grzanie aktywne" id="1" sensor="Piec" state="0"/>
+	</heater>
+
+	<gate>
+	    <element desc="Otwieranie/zamykanie bramy" id="1" sensor="BramaGaraz" state="0" time="25"/>
+	    <element desc="Otwieranie bramy wjazdowej" id="2" state="0" time="30"/>
+	    <element desc="Otwieranie furtki" id="3" state="0" time="4"/>
+	</gate>
+
+	<status>
+	    <element desc="Szambo pelne" id="1" messageId="0" state="0"/>
+	    <element desc="Brak komunikacji ze sterownikiem" id="2" state="0"/>
+	</status>
+    </devices>
 
     <switch ip="192.168.1.2" port="80">
-		<garage url="/gate0"/>
+		<garage sensor="BramaGaraz" url="/gate0"/>
 		<mainGate url="/gate1"/>
 		<door url="/door"/>
-		<Sprinkler1 url="/water1_on"/>
-		<Sprinkler2 url="/water2_on"/>
-		<Sprinkler3 url="/water3_on"/>
+		<Sprinkler1 sensor="Zraszacze1" url="/water1_on"/>
+		<Sprinkler2 sensor="Zraszacze2" url="/water2_on"/>
+		<Sprinkler3 sensor="Zraszacze3" url="/water3_on"/>
 		<SprinklerOff url="/water_off"/>
 		<HeaterOn url="/heat_on"/>
 		<HeaterOff url="/heat_off"/>
@@ -15,7 +40,6 @@
     </switch>
 
      <radio ip="127.0.0.1" mp3_directory="/media/usb0/Muzyka/" port="8080"/>
-     <AlarmSystem ip="192.168.1.100" port="9080"/>
 
     <alarm>
 		<start_time title="Godzina alarmu" type="text" value="07:00"/>
@@ -45,7 +69,7 @@
 
     <autowater>
 	<state param="disable;Wylaczone,enable;Aktywne" title="Stan" type="select" value="enable"/>
-	<start_time title="Podlewanie start" type="text" value="22:00"/>
+	<start_time title="Podlewanie start" type="text" value="22:30"/>
 	<duration title="Czas trwania" type="text" value="20"/>
 	<rain param="False;Ignoruj,True;Sprawdzaj" title="Sprawdzaj prognoze pogody" type="select" value="True"/>
     	<day1 param="False;Wylaczone,True;Aktywne" title="Poniedzialek" type="select" value="False"/>
@@ -53,8 +77,8 @@
     	<day3 param="False;Wylaczone,True;Aktywne" title="Sroda" type="select" value="False"/>
     	<day4 param="False;Wylaczone,True;Aktywne" title="Czwartek" type="select" value="True"/>
     	<day5 param="False;Wylaczone,True;Aktywne" title="Piatek" type="select" value="False"/>
-    	<day6 param="False;Wylaczone,True;Aktywne" title="Sobota" type="select" value="False"/>
-    	<day7 param="False;Wylaczone,True;Aktywne" title="Niedziela" type="select" value="True"/>
+    	<day6 param="False;Wylaczone,True;Aktywne" title="Sobota" type="select" value="True"/>
+    	<day7 param="False;Wylaczone,True;Aktywne" title="Niedziela" type="select" value="False"/>
     </autowater>
 
     <heater>
@@ -144,14 +168,4 @@
 	<action device="light" ifStatment="alarmActivate" roomId="1" timeStart="sunset" validMonths="4095"/>
     </actions>
 
-    <status>
-		<element desc="No action" icon="gate" name="garage" state="0"/>
-		<element desc="No action" icon="gate" name="mainGate" state="0"/>
-		<element desc="No action" icon="gate" name="door" state="0"/>
-		<element desc="No action" icon="garden" name="sprinkler" state="0"/>
-		<element desc="No action" icon="piec" name="heater" state="0"/>
-		<element desc="No action" icon="switch" messageId="1" name="error" state="0"/>
-		<element desc="No action" icon="garden" name="rain" state="0"/>
-		<element desc="No action" icon="cesspit" messageId="0" name="cesspit" state="0"/>
-    </status>
 </HomeControlCenter>

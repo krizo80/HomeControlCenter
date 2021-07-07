@@ -1,43 +1,7 @@
-<?xml version="1.0" ?><HomeControlCenter file="configuration and status" id="00000xxx" password="" server="http://192.168.1.3/register">
+<?xml version="1.0" ?><HomeControlCenter file="configuration and status" id="00000xxx" password="xxxx" server="http://192.168.1.3/register">
 
 
      <AlarmSystem ip="192.168.1.100" port="9080"/>
-
-    <devices>
-	<sprinkler>
-	    <element desc="Zraszacze w polu 1" id="1" sensor="Zraszacze1" state="0"/>
-	    <element desc="Zraszacze w polu 2" id="2" sensor="Zraszacze2" state="0"/>
-	    <element desc="Zraszacze w polu 3" id="3" sensor="Zraszacze3" state="0"/>
-	</sprinkler>
-
-	<heater>
-	    <element desc="Grzanie aktywne" id="1" sensor="Piec" state="0"/>
-	</heater>
-
-	<gate>
-	    <element desc="Otwieranie/zamykanie bramy" id="1" sensor="BramaGaraz" state="0" time="25"/>
-	    <element desc="Otwieranie bramy wjazdowej" id="2" state="0" time="30"/>
-	    <element desc="Otwieranie furtki" id="3" state="0" time="4"/>
-	</gate>
-
-	<status>
-	    <element desc="Szambo pelne" id="1" messageId="0" state="0"/>
-	    <element desc="Brak komunikacji ze sterownikiem" id="2" state="0"/>
-	</status>
-    </devices>
-
-    <switch ip="192.168.1.2" port="80">
-		<garage sensor="BramaGaraz" url="/gate0"/>
-		<mainGate url="/gate1"/>
-		<door url="/door"/>
-		<Sprinkler1 sensor="Zraszacze1" url="/water1_on"/>
-		<Sprinkler2 sensor="Zraszacze2" url="/water2_on"/>
-		<Sprinkler3 sensor="Zraszacze3" url="/water3_on"/>
-		<SprinklerOff url="/water_off"/>
-		<HeaterOn url="/heat_on"/>
-		<HeaterOff url="/heat_off"/>
-		<Status url="/status"/>
-    </switch>
 
      <radio ip="127.0.0.1" mp3_directory="/media/usb0/Muzyka/" port="8080"/>
 
@@ -70,7 +34,7 @@
     <autowater>
 	<state param="disable;Wylaczone,enable;Aktywne" title="Stan" type="select" value="enable"/>
 	<start_time title="Podlewanie start" type="text" value="22:30"/>
-	<duration title="Czas trwania" type="text" value="20"/>
+	<duration title="Czas trwania" type="text" value="1"/>
 	<rain param="False;Ignoruj,True;Sprawdzaj" title="Sprawdzaj prognoze pogody" type="select" value="True"/>
     	<day1 param="False;Wylaczone,True;Aktywne" title="Poniedzialek" type="select" value="False"/>
     	<day2 param="False;Wylaczone,True;Aktywne" title="Wtorek" type="select" value="True"/>
@@ -167,5 +131,29 @@
 	<action device="light" roomId="0" timeEnd="22:00" timeStart="sunset" validMonths="2273"/>
 	<action device="light" ifStatment="alarmActivate" roomId="1" timeStart="sunset" validMonths="4095"/>
     </actions>
+
+    <devices>
+	<sprinkler>
+	    <element desc="Zraszacze w polu 1" id="1" sensor="Zraszacze1" state="0"/>
+	    <element desc="Zraszacze w polu 2" id="2" sensor="Zraszacze2" state="0"/>
+	    <element desc="Zraszacze w polu 3" id="3" sensor="Zraszacze3" state="0"/>
+	</sprinkler>
+
+	<heater>
+	    <element desc="Grzanie aktywne" id="1" sensor="Piec" state="0"/>
+	</heater>
+
+	<gate>
+	    <element desc="Otwieranie/zamykanie bramy" id="1" sensor="BramaGaraz" state="0" time="18"/>
+	    <element desc="Otwieranie bramy wjazdowej" id="2" sensor="BramaWjazdowa" state="0" time="27"/>
+	    <element desc="Otwieranie furtki" id="3" sensor="Furtka" state="0" time="3"/>
+	</gate>
+
+	<status>
+	    <element desc="Brak komunikacji ze sterownikiem" id="0" state="0"/>
+	    <element desc="Szambo pelne" id="1" messageId="0" sensor="SzamboSensor" state="0"/>
+
+	</status>
+    </devices>
 
 </HomeControlCenter>
